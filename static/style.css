@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.upload-box input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.preview img {
+    margin-top: 15px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 📱 Mobile (до 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* 📱 Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 500px;
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* 💻 Small laptop (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+/* 🖥️ Large screens (1025px+) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 450px;
+    }
+}
